@@ -11,16 +11,15 @@ class HomeControllerPage extends GetxController {
     ButtonData.github(),
   ];
 
-  Future<void> launchInBrowser(String url) async {
-    Uri.parse(url);
+  Future<void> launchInBrowser(Uri url) async {
     if (!await launchUrl(
-      url as Uri,
+      url,
       mode: LaunchMode.inAppWebView,
+      webViewConfiguration: const WebViewConfiguration(enableJavaScript: true),
     )) {
       throw Exception('Could not launch $url');
     }
   }
-
 }
 
 class ButtonData {
@@ -39,6 +38,6 @@ class ButtonData {
       ButtonData(text: 'Futebol', color: Colors.green, url:  Strings.webFootball);
 
   factory ButtonData.github() =>
-      ButtonData(text: 'Github', color: Colors.black87, url:  Strings.webFootball);
+      ButtonData(text: 'Github', color: Colors.black87, url:  Strings.webGit);
 
 }

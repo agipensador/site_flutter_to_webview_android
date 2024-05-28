@@ -6,6 +6,4 @@ class Strings {
   static const String webFootball = "https://ge.globo.com/";
   static const String linkImage =
       "https://avatars.githubusercontent.com/u/162528483?v=4";
-  static const String githubHTML =
-      '''var htmlContent = '<html><body><h1>Bem vindx ;)</h1></body></html>'; document.write(htmlContent);''';
 }
