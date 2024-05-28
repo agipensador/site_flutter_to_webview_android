@@ -24,7 +24,7 @@ void main() {
       ),
     );
 
-    // Verifica se tem 3 widgets de OutlineButtonWidget
+    // Verifica se tem 4 widgets de OutlineButtonWidget
     expect(find.byType(OutlineButtonWidget), findsNWidgets(4));
 
     // Verifica se a cor do botão 0 é vermelho

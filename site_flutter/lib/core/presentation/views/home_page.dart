@@ -55,13 +55,6 @@ class OutlineButtonWidget extends GetView<HomeControllerPage> {
             key: const Key('btnWeb'),
             onPressed: () {
               controller.launchInBrowser(Uri.parse(buttonData.url));
-              // Get.toNamed(
-              //   '/webView',
-              //   arguments: {
-              //     'index': index, 'color': color,
-              //   },
-              // );
-
             },
             style: _buildButtonStyle(),
             child: Text(buttonData.text),
