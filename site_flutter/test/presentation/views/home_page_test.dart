@@ -6,12 +6,10 @@ import 'package:site_flutter/core/presentation/views/home_page.dart';
 
 void main() {
   setUp(() {
-    // Initialize GetX Controller
     Get.put(HomeControllerPage());
   });
 
   tearDown(() {
-    // Reset GetX
     Get.reset();
   });
 

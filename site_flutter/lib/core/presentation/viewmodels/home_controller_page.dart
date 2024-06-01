@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:site_flutter/core/presentation/views/home_page.dart';
 import 'package:site_flutter/core/resources/strings.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -10,6 +11,10 @@ class HomeControllerPage extends GetxController {
     ButtonData.football(),
     ButtonData.github(),
   ];
+
+  void handleNewsButtonClick(BuildContext context) {
+    Get.find().sendToWebView("news");
+  }
 
   Future<void> launchInBrowser(Uri url) async {
     if (!await launchUrl(
